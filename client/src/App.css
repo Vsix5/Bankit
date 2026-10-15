@@ -1,0 +1,109 @@
+#root{
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background:#f8fafc;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 6%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 28px;
+  
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #2563eb;
+}
+main {
+  padding: 64px 6%;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+@media(max-width: 600px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  nav{
+    gap: 16px;
+  }
+
+  main{
+    padding: 40px 6%;
+  }
+  main h2{
+    font-size: 26px;
+  }
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+section input {
+  padding: 12px;
+  width: min(400px, 100%);
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+section button {
+  padding: 12px 20px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.categories button {
+  padding: 20px 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: white;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.categories button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
