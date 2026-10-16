@@ -31,7 +31,7 @@ function App() {
               <button type="button">Sports</button>
             </div>
           </section>
-
+          
       </main>
     
     </div>
